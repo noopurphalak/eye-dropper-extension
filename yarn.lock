@@ -1114,6 +1114,14 @@
   dependencies:
     "@types/node" "*"
 
+"@types/chrome@^0.0.179":
+  version "0.0.179"
+  resolved "https://registry.yarnpkg.com/@types/chrome/-/chrome-0.0.179.tgz#57f93c9bd2e4ebf3a517698868d2012b870bb4df"
+  integrity sha512-60zloNApIf88RwiG3Q7E+4NBG+znchhWmcaEVAAhUZahQbft5LWBzij4sinsfpAwbTtuWdFfUSpZsFhXTEFPVw==
+  dependencies:
+    "@types/filesystem" "*"
+    "@types/har-format" "*"
+
 "@types/connect-history-api-fallback@^1.3.5":
   version "1.3.5"
   resolved "https://registry.yarnpkg.com/@types/connect-history-api-fallback/-/connect-history-api-fallback-1.3.5.tgz#d1f7a8a09d0ed5a57aee5ae9c18ab9b803205dae"
@@ -1176,6 +1184,23 @@
     "@types/express-serve-static-core" "^4.17.18"
     "@types/qs" "*"
     "@types/serve-static" "*"
+
+"@types/filesystem@*":
+  version "0.0.32"
+  resolved "https://registry.yarnpkg.com/@types/filesystem/-/filesystem-0.0.32.tgz#307df7cc084a2293c3c1a31151b178063e0a8edf"
+  integrity sha512-Yuf4jR5YYMR2DVgwuCiP11s0xuVRyPKmz8vo6HBY3CGdeMj8af93CFZX+T82+VD1+UqHOxTq31lO7MI7lepBtQ==
+  dependencies:
+    "@types/filewriter" "*"
+
+"@types/filewriter@*":
+  version "0.0.29"
+  resolved "https://registry.yarnpkg.com/@types/filewriter/-/filewriter-0.0.29.tgz#a48795ecadf957f6c0d10e0c34af86c098fa5bee"
+  integrity sha512-BsPXH/irW0ht0Ji6iw/jJaK8Lj3FJemon2gvEqHKpCdDCeemHa+rI3WBGq5z7cDMZgoLjY40oninGxqk+8NzNQ==
+
+"@types/har-format@*":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@types/har-format/-/har-format-1.2.8.tgz#e6908b76d4c88be3db642846bb8b455f0bfb1c4e"
+  integrity sha512-OP6L9VuZNdskgNN3zFQQ54ceYD8OLq5IbqO4VK91ORLfOm7WdT/CiT/pHEBSQEqCInJ2y3O6iCm/zGtPElpgJQ==
 
 "@types/html-minifier-terser@^6.0.0":
   version "6.1.0"
@@ -1733,6 +1758,27 @@
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/@vue/web-component-wrapper/-/web-component-wrapper-1.3.0.tgz#b6b40a7625429d2bd7c2281ddba601ed05dc7f1a"
   integrity sha512-Iu8Tbg3f+emIIMmI2ycSI8QcEuAUgPTgHwesDU1eKMLE4YC/c/sFbGc70QgMq31ijRftV0R7vCm9co6rldCeOA==
+
+"@vueuse/core@^8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-8.5.0.tgz#2b7548e52165c88e1463756c36188e105d806543"
+  integrity sha512-VEJ6sGNsPlUp0o9BGda2YISvDZbhWJSOJu5zlp2TufRGVrLcYUKr31jyFEOj6RXzG3k/H4aCYeZyjpItfU8glw==
+  dependencies:
+    "@vueuse/metadata" "8.5.0"
+    "@vueuse/shared" "8.5.0"
+    vue-demi "*"
+
+"@vueuse/metadata@8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/metadata/-/metadata-8.5.0.tgz#1aaa3787922cfda0f38243aaa7779366a669b4db"
+  integrity sha512-WxsD+Cd+bn+HcjpY6Dl9FJ8ywTRTT9pTwk3bCQpzEhXVYAyNczKDSahk50fCfIJKeWHhyI4B2+/ZEOxQAkUr0g==
+
+"@vueuse/shared@8.5.0":
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/shared/-/shared-8.5.0.tgz#fa01ecd3161933f521dd6428b9ef8015ded1bbd3"
+  integrity sha512-qKG+SZb44VvGD4dU5cQ63z4JE2Yk39hQUecR0a9sEdJA01cx+XrxAvFKJfPooxwoiqalAVw/ktWK6xbyc/jS3g==
+  dependencies:
+    vue-demi "*"
 
 "@webassemblyjs/ast@1.11.1":
   version "1.11.1"
@@ -5954,6 +6000,16 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
+
+vue-cli-plugin-chrome-extension-cli@~1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-chrome-extension-cli/-/vue-cli-plugin-chrome-extension-cli-1.1.4.tgz#3edc74c7b650c3961f0417b1f94bedfe620cbab5"
+  integrity sha512-Ij6tVvjju5vz+2N31Drkcsr6VBsZYlwsWiHWL8zeRfN5sIdl/+o8uK1AnV0EfmFTUXB7nM9XYWb9m8nm8feP6Q==
+
+vue-demi@*:
+  version "0.12.5"
+  resolved "https://registry.yarnpkg.com/vue-demi/-/vue-demi-0.12.5.tgz#8eeed566a7d86eb090209a11723f887d28aeb2d1"
+  integrity sha512-BREuTgTYlUr0zw0EZn3hnhC3I6gPWv+Kwh4MCih6QcAeaTlaIX0DwOVN0wHej7hSvDPecz4jygy/idsgKfW58Q==
 
 vue-eslint-parser@^8.0.0, vue-eslint-parser@^8.0.1:
   version "8.3.0"
