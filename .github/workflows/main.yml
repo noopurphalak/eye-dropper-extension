@@ -28,8 +28,8 @@ jobs:
         with:
           node-version: "16"
       - name: Installing yarn
-      - run: npm install -g yarn
+        run: npm install -g yarn
       - name: Building Chrome Extension Package
-      - run: yarn build
+        run: yarn build
       - name: Zipping the Extension Package
-      - run: zip -r9 dist.zip dist
+        run: zip -r9 dist.zip dist
