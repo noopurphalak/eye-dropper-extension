@@ -1,0 +1,24 @@
+name: Update Chrome Extension
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  update-chrome-extension:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+      - name: Installing yarn
+      - run: npm install -g yarn
+      - name: Building Chrome Extension Package
+      - run: yarn build
+      - name: Zipping the Extension Package
+      - run: zip -r9 dist.zip dist
