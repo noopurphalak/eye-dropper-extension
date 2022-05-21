@@ -29,6 +29,8 @@ jobs:
           node-version: "16"
       - name: Installing yarn
         run: npm install -g yarn
+      - name: Installing Dependencies
+        run: yarn install
       - name: Building Chrome Extension Package
         run: yarn build
       - name: Zipping the Extension Package
