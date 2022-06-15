@@ -33,5 +33,7 @@ jobs:
         run: yarn install
       - name: Building Chrome Extension Package
         run: yarn build
+      - name: Spit out output CSS file
+        run: npx tailwindcss -i ./src/input.css -o ./dist/output.css
       - name: Zipping the Extension Package
         run: zip -r9 dist.zip dist
